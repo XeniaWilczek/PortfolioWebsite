@@ -7,7 +7,7 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="bg-slate-950 text-slate-200">
-    <div class="container mx-auto mt-10 px-4 lg:mt-16 lg:px-8">
+    <div class="container m-auto mt-10 px-4 lg:mt-16 lg:px-8">
       <div
         class="hero-section flex flex-col items-start gap-8 px-4 lg:flex-row lg:items-center lg:gap-12 lg:px-6"
       >
@@ -158,11 +158,21 @@
             <p class="text-slate-400">
               Die Fahrschul-App simuliert unterschiedliche Situationen im
               Straßenverkehr, mit dem Ziel Kenntnisse der Straßenverkehrsordnung
-              zu vermitteln. Der Nutzer kann das animierte Quiz spielen. Darüber
-              hinaus ist es möglich, neue Verkehrsszenarien in einer Datenbank
-              anzulegen. Dieses Projekt ist aus der Idee entstanden, den
-              Fahrschulunterricht dynamischer zu gestalten. Ich habe es
-              vollkommen selbstständig konzipiert.
+              zu vermitteln. Ein authentifizierter Nutzer kann das animierte
+              Quiz spielen. Darüber hinaus ist es möglich, neue
+              Verkehrsszenarien in einer Postgres-Datenbank anzulegen. Die
+              Authentifizierung wird über Supabase abgewickelt, inklusive Social
+              Login und der Absicherung von Datenabfragen über Row Level
+              Security. Für das Hochladen und Verwalten von Bilddateien wird der
+              integrierte Objektspeicher genutzt.
+            </p>
+
+            <p class="text-slate-400">
+              Dieses Projekt ist aus der Idee entstanden, den
+              Fahrschulunterricht dynamischer zu gestalten. Ich habe das Projekt
+              vollkommen selbstständig konzipiert, von der Ausarbeitung der
+              Anforderungen über die Erstellung des Datenmodells bis hin zur
+              praktischen Umsetzung und Dokumentation.
             </p>
             <div
               class="tech-container w-full my-4 flex justify-start items-start gap-2 flex-wrap lg:gap-4"
@@ -245,12 +255,15 @@
               </svg>
             </a>
             <p class="text-slate-400">
-              Das Kanban-Board stellt eine einfache Variante der klassischen
+              Das Kanban-Board stellt eine technische Umsetzung der klassischen
               Kanban-Methode dar. Man kann ein Board anlegen, welches wiederum
               Tasks enthalten kann. Diese lassen sich in die drei Spalten
-              „ToDo“, „InProgress“ und „Done“ einteilen. In diesem Projekt habe
-              ich zusätzlich zum bisherigen Stack die Komponenten-Bibliothek
-              Shadcn benutzt.
+              „ToDo“, „InProgress“ und „Done“ einteilen und per Drag-and-Drop
+              verschieben. Man kann sie ebenfalls einer Person zuweisen und mit
+              einer Frist versehen. Dieses Projekt habe ich in zwei Varianten
+              umgesetzt, eine mit Local Storage und eine mit Supabase.
+              Zusätzlich zum bisherigen Stack habe ich die
+              Komponenten-Bibliothek Shadcn genutzt.
             </p>
             <div
               class="tech-container w-full my-4 flex justify-start items-start gap-2 flex-wrap lg:gap-4"
@@ -292,81 +305,8 @@
               >Code ansehen</a
             >
           </div>
-          <!--Projekt 3: User-Übersicht-->
-          <div
-            class="project-card4 w-full flex flex-col justify-start items-start gap-2 lg:gap-4"
-          >
-            <a
-              href="https://xeniawilczek.github.io/User-Uebersicht/"
-              target="_blank"
-            >
-              <img
-                src="/public/images/UserUebersicht.png"
-                alt="User-Übersicht"
-                class="w-full aspect-video object-cover rounded-lg lg:rounded-xl"
-              />
-            </a>
-            <h3 class="text-2xl mt-4 lg:mt-6 lg:text-4xl font-bold">
-              User-Übersicht
-            </h3>
-            <a
-              href="https://github.com/XeniaWilczek/User-Uebersicht"
-              target="_blank"
-              class="text-xs text-sky-400 mb-6 flex justify-center items-center gap-1"
-              >GitHub: User-Übersicht
-              <svg
-                xmlns="http://w3.org"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="currentColor"
-                class="size-3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                />
-              </svg>
-            </a>
-            <p class="text-slate-400">
-              Die User-Übersicht ist eine App zur Verwaltung von Nutzerdaten.
-              Über eine Eingabemaske kann man einen Nutzer anlegen und in einer
-              Liste speichern. Die UserCards kann man aktualisieren und löschen.
-              Das Projekt nutzt Tailwind und TypeScript.
-            </p>
-            <div
-              class="tech-container w-full my-4 flex justify-start items-start gap-2 flex-wrap lg:gap-4"
-            >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >React</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >TypeScript</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >Vite</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >SCSS</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
-              >
-            </div>
-            <a
-              href="https://github.com/XeniaWilczek/User-Uebersicht"
-              target="_blank"
-              class="bg-sky-400 rounded-lg p-2 text-base font-semibold text-slate-950 hover:bg-sky-300 transition-colors duration-300 ease-in-out lg:rounded-xl lg:p-3 lg:text-xl"
-              >Code ansehen</a
-            >
-          </div>
-          <!--Projekt 4: Einkaufliste-->
+
+          <!--Projekt 3: Einkaufliste-->
           <div
             class="project-card1 w-full flex flex-col justify-start items-start gap-2 lg:gap-4"
           >
@@ -417,7 +357,11 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
+                >React</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >TypeScript</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
@@ -433,11 +377,7 @@
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >React</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >TypeScript</span
+                >HTML</span
               >
             </div>
             <a
@@ -447,6 +387,82 @@
               >Code ansehen</a
             >
           </div>
+
+          <!--Projekt 4: User-Übersicht-->
+          <div
+            class="project-card4 w-full flex flex-col justify-start items-start gap-2 lg:gap-4"
+          >
+            <a
+              href="https://xeniawilczek.github.io/User-Uebersicht/"
+              target="_blank"
+            >
+              <img
+                src="/public/images/UserUebersicht.png"
+                alt="User-Übersicht"
+                class="w-full aspect-video object-cover rounded-lg lg:rounded-xl"
+              />
+            </a>
+            <h3 class="text-2xl mt-4 lg:mt-6 lg:text-4xl font-bold">
+              User-Übersicht
+            </h3>
+            <a
+              href="https://github.com/XeniaWilczek/User-Uebersicht"
+              target="_blank"
+              class="text-xs text-sky-400 mb-6 flex justify-center items-center gap-1"
+              >GitHub: User-Übersicht
+              <svg
+                xmlns="http://w3.org"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-3"
+              >
+                < stroke-linecap="round" stroke-linejoin="round" d="M13.5
+                6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25
+                21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21
+                3v5.25" />
+              </svg>
+            </a>
+            <p class="text-slate-400">
+              Die User-Übersicht ist eine CRUD-Applikation zur Verwaltung von
+              Nutzerdaten. Die Datenerfassung erfolgt über eine Eingabemaske mit
+              clientseitiger Validierung auf Vollständigkeit. Angelegte Nutzer
+              werden in einer Liste gespeichert und als User-Cards angezeigt.
+              Die User-Cards kann man bearbeiten und löschen.
+            </p>
+            <div
+              class="tech-container w-full my-4 flex justify-start items-start gap-2 flex-wrap lg:gap-4"
+            >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >React</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >TypeScript</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >Vite</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >SCSS</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >HTML</span
+              >
+            </div>
+            <a
+              href="https://github.com/XeniaWilczek/User-Uebersicht"
+              target="_blank"
+              class="bg-sky-400 rounded-lg p-2 text-base font-semibold text-slate-950 hover:bg-sky-300 transition-colors duration-300 ease-in-out lg:rounded-xl lg:p-3 lg:text-xl"
+              >Code ansehen</a
+            >
+          </div>
+
           <!-- Projekt 5: ToDoApp -->
           <div
             class="project-card1 w-full flex flex-col justify-start items-start gap-2 lg:gap-4"
@@ -496,11 +512,7 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >CSS</span
+                >React</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
@@ -508,7 +520,11 @@
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >React</span
+                >CSS</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >HTML</span
               >
             </div>
             <a
@@ -570,12 +586,13 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
+                >API-Integration</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >SCSS</span
+                >JavaScript</span
               >
+
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
                 >Mobile View</span
@@ -586,11 +603,11 @@
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >JavaScript</span
+                >SCSS</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >API-Anbindung</span
+                >HTML</span
               >
             </div>
             <a
@@ -648,19 +665,7 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >SCSS</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >Responsive Design</span
-              >
-              <span
-                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >Vite</span
+                >API-Integration</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
@@ -668,7 +673,19 @@
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >API-Anbindung</span
+                >Vite</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >Responsive Design</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >SCSS</span
+              >
+              <span
+                class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
+                >HTML</span
               >
             </div>
             <a
@@ -727,15 +744,16 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
+                >JavaScript</span
               >
+
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
                 >CSS</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >JavaScript</span
+                >HTML</span
               >
             </div>
             <a
@@ -796,7 +814,7 @@
             >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >HTML</span
+                >Responsive Design</span
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
@@ -804,7 +822,7 @@
               >
               <span
                 class="bg-slate-800 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-200 lg:text-sm"
-                >Responsive Design</span
+                >HTML</span
               >
             </div>
             <a
