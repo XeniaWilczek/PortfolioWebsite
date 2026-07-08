@@ -2,7 +2,7 @@
 
 ![Projekt-Vorschau](public/images/previewPortfolioWebsite.png)
 
-Eine responsive und modern gestaltete Portfolio-Website für meine persönliche Präsentation als Frontend Web Developerin. Die Website dient als digitale Visitenkarte, stellt relevante Kernkompetenzen dar und bietet eine strukturierte Übersicht über realisierte Softwareprojekte.
+Eine responsive und modern gestaltete Portfolio-Website für meine persönliche Präsentation als Frontend Web Developerin. Die Website dient als digitale Visitenkarte, stellt relevante Kernkompetenzen dar und bietet eine strukturierte Übersicht über von mir realisierte Softwareprojekte.
 
 ## Voraussetzungen
 Für die lokale Ausführung und das Kompilieren des Projekts werden folgende Komponenten benötigt:
@@ -25,17 +25,17 @@ Die Portfolio-Website wurde als performante und datenschutzkonforme Landingpage 
 * **Typografische Akzente:** Zur Hervorhebung zentraler Qualifikationen wird ein präzise maskierter linearer Farbverlauf (`bg-linear-to-r from-sky-400 to-emerald-600 bg-clip-text text-transparent`) eingesetzt.
 
 ### Integrierte Projekt-Showcases
-Die Webseite fungiert als Hub für die Demonstration praktischer Full-Stack- und Frontend-Fähigkeiten. Jedes Projekt wird modular mit detaillierten Beschreibungen, Live-Verlinkungen und Badge-Containern für den Tech-Stack präsentiert:
+Die Webseite präsnetiert meine praktischen Frontend-Fähigkeiten. Jedes Projekt wird modular mit detaillierten Beschreibungen, Live-Verlinkungen und Badge-Containern für den Tech-Stack präsentiert:
 
 * **Fahrschul-App:** Interaktives Quiz-System auf Basis von React, TypeScript und Shadcn. Es demonstriert die Anbindung an eine relationale Postgres-Datenbank via Supabase-Infrastruktur inklusive Social-Login-Authentifizierung, Objektspeicher-Anbindung und Absicherung über Row Level Security (RLS).
-* **Kanban-Board:** Technische Umsetzung der klassischen agilen Arbeitsmethode. Beinhaltet ein dreispaltiges Layout mit dynamischer Drag-and-Drop-Verschiebung von Tasks, Fristenverwaltung und Personen-Zuweisung. Das Projekt wurde architektonisch in zwei Varianten realisiert: autark mittels *Local Storage* sowie cloudbasiert über *Supabase*.
+* **Kanban-Board:** Technische Umsetzung der klassischen agilen Projektmanagementmethode. Beinhaltet ein dreispaltiges Layout mit dynamischer Drag-and-Drop-Verschiebung von Tasks, Fristenverwaltung und Personen-Zuweisung. 
 * **Einkaufslisten-App:** Single-Page-Application zur Einkaufsoptimierung mit flexiblen Mengenangaben, einer case-insensitiven Duplikatsprüfung im Zustandssystem sowie einer automatischen, reaktiven Neusortierung erledigter Einträge an das Listenende.
 * **User-Übersicht:** Eine strukturierte CRUD-Anwendung zur Erfassung und Verwaltung von Nutzerdaten. Sie enthält eine Eingabemaske mit clientseitiger Validierung auf Vollständigkeit sowie editier- und löschbare Benutzeroberflächen-Karten (User-Cards) auf Basis von React, TypeScript und SCSS.
 * **To-Do-App:** Eine Single-Page-Application zur digitalen Organisation täglicher Aufgaben. Sie implementiert ein interaktives Text-Eingabefeld, ein komponentenbasiertes UI-Rendering und ein zentrales Zustandsmanagement mittels React-Hooks.
-* **Wetter-App:** Eine moderne Web-Applikation zum Abruf weltweiter Echtzeit-Wetterdaten über asynchrone API-Abfragen. Die Logik beinhaltet das Verwalten einer clientseitig editierbaren Favoritenliste und ein speziell für mobile Endgeräte optimiertes SCSS-Layout (Mobile First).
-* **Witze-App:** Webanwendung zum Abruf unterhaltsamer Witze über eine öffentliche API-Schnittstelle. Das Projekt demonstriert ein responsives SCSS-Design mit einem flexiblen, dynamischen Farbschema (Color-Scheme), welches sich autonom an Systempräferenzen anpasst oder per Benutzerinteraktion umgeschaltet werden kann.
-* **Notiz-App:** Digitale Variante eines klassischen Notizblocks zur flexiblen Verwaltung von Notizen. Das System bietet Formatierungsklassen zur Kategorisierung (Pflicht/Freizeit) und Priorisierung (Rahmen-Zuweisung) von Karten. Die Datenhaltung erfolgt im *Local Storage* und wird durch eine programmierte Maskierung gegen Cross-Site-Scripting (XSS) abgesichert.
-* **Thermen-Website:** Mehrseitiger Webauftritt einer fiktiven Therme („Stille Oase“). Die technische Umsetzung erfolgt rein nativ über HTML5 und CSS3 unter Verzicht auf JavaScript. Sie demonstriert strukturierte responsive Layout-Raster mittels CSS-Grid und Flexbox sowie eine intuitive One-Page-Navigation.
+* **Wetter-App:** Eine moderne Webapplikation zum Abruf weltweiter Echtzeit-Wetterdaten über asynchrone API-Abfragen. Die Logik beinhaltet das Verwalten einer clientseitig editierbaren Favoritenliste und ein speziell für mobile Endgeräte optimiertes SCSS-Layout (Mobile First).
+* **Witze-App:** Webanwendung zum Abruf von Witzen unterschiedlicher Kategorien über eine öffentliche API-Schnittstelle. Das Projekt demonstriert ein responsives SCSS-Design mit einem flexiblen, dynamischen Farbschema (Color-Scheme), welches sich autonom an Systempräferenzen anpasst oder per Benutzerinteraktion umgeschaltet werden kann.
+* **Notiz-App:** Digitale Variante eines klassischen Notizblocks zur flexiblen Verwaltung von Notizen. Das System bietet Formatierungsklassen zur Kategorisierung (Pflicht/Freizeit) und Priorisierung (Rahmen-Zuweisung) von Karten. Zudem ist ein Schutz gegen Cross-Site-Scripting (XSS) eingebaut. Die Speicherung der Daten erfolgt im *Local Storage*. 
+* **Thermen-Website:** Mehrseitiger Webauftritt einer fiktiven Therme („Stille Oase“). Die technische Umsetzung erfolgt nativ über HTML5 und CSS3. Sie demonstriert strukturierte, responsive Layout-Raster mittels CSS-Grid und Flexbox sowie eine intuitive One-Page-Navigation.
 
 ### Datenschutzkonformes Konzept (Privacy-First)
 * **Reine statische Hyperlinks:** Das Verknüpfen externer Plattformen (LinkedIn, GitHub) erfolgt ausschließlich über einfache Hyperlinks. Im Gegensatz zu Iframe-Plug-ins werden beim reinen Laden der Seite keinerlei Benutzerdaten an Drittanbieter übertragen.
@@ -62,7 +62,7 @@ npm install
    npm run dev
    ```
 2. Öffnen Sie die in der Konsole angezeigte lokale URL (Standard: `http://localhost:5173`) in Ihrem Webbrowser.
-3. Nutzen Sie die Benutzeroberfläche, um sich über Fähigkeiten zu informieren oder über die interaktiven Schaltflächen die Quellcodes der präsentierten Anwendungen einzusehen.
+
 
 ## Deployment
 Die Website kann direkt über GitHub Pages gehostet werden:
@@ -71,8 +71,6 @@ Die Website kann direkt über GitHub Pages gehostet werden:
 3. Wählen Sie unter Build and deployment den `main` (oder `master`) Branch aus und klicken Sie auf Save.
 4. Nach wenigen Minuten ist die Website live unter Ihrer GitHub-Pages-URL erreichbar.
 
-## Mitwirken
-Da dies ein persönliches Projekt oder Portfolio-Projekt ist, werden aktuell keine Pull Requests oder externen Code-Beiträge entgegengenommen. Feedback oder Fragen können Sie mir jedoch gerne per E-Mail senden.
 
 ## Lizenz
 Dieses Projekt wurde von Xenia Wilczek erstellt. Alle Rechte an Code und Design vorbehalten (All Rights Reserved).
